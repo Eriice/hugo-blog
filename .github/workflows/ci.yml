@@ -18,3 +18,10 @@ jobs:
         hugo-version: '0.59.1'
     - name: Hugo blog CI
       run: hugo --minify
+      
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v2.5.0
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACCESS_TOKEN }}
+        PUBLISH_BRANCH: pages
+        PUBLISH_DIR: ./public
