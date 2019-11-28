@@ -1,6 +1,6 @@
 baseURL = "http://example.org/"
 languageCode = "en-us"
-title = "黑白二进制"
+title = "黑白进制"
 theme = "ezhil"
 
 copyright = "Eriice © 2019"
