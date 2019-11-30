@@ -17,7 +17,7 @@ jobs:
       with:
         hugo-version: '0.59.1'
     - name: Hugo blog CI
-      run: hugo --minify
+      run: hugo -D
       
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.0
