@@ -1,1 +1,82 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 黑白进制</title><link>/posts/</link><description>Recent content in Posts on 黑白进制</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>Eriice © 2019</copyright><atom:link href="/posts/index.xml" rel="self" type="application/rss+xml"/><item><title/><link>/posts/readme/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/posts/readme/</guid><description>blog-article 博客文章</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on 黑白进制</title>
+    <link>/posts/</link>
+    <description>Recent content in Posts on 黑白进制</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Eriice © 2019</copyright>
+    <lastBuildDate>Thu, 28 Nov 2019 18:18:21 +0800</lastBuildDate>
+    
+	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Github Action Submodules</title>
+      <link>/posts/github-action-submodules/</link>
+      <pubDate>Thu, 28 Nov 2019 18:18:21 +0800</pubDate>
+      
+      <guid>/posts/github-action-submodules/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Centos Install Jenkins</title>
+      <link>/posts/centos-install-jenkins/</link>
+      <pubDate>Thu, 28 Nov 2019 01:52:25 +0800</pubDate>
+      
+      <guid>/posts/centos-install-jenkins/</guid>
+      <description>sudo yum install java-1.8.0-openjdk$ java -versionopenjdk version &amp;#34;1.8.0_232&amp;#34; OpenJDK Runtime Environment (build 1.8.0_232-b09) OpenJDK 64-Bit Server VM (build 25.232-b09, mixed mode)rpm -q centos-release centos-release-7-4.1708.el7.centos.x86_64 centos-release-7-7.1908.0.el7.centos.x86_64 https://medium.com/@nazishalam07/how-to-install-jenkins-on-centos-7-a9db268663f5
+https://blog.csdn.net/miss1181248983/article/details/82840006
+jenkins 配合 docker，需要注意将 jenkins 角色加入 docker 用户组</description>
+    </item>
+    
+    <item>
+      <title>Linux 免密码登陆</title>
+      <link>/posts/linux-login-without-password/</link>
+      <pubDate>Thu, 28 Nov 2019 00:44:32 +0800</pubDate>
+      
+      <guid>/posts/linux-login-without-password/</guid>
+      <description>Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
+root 用户免密登陆 一般云平台都提供可视化配置工具。
+以阿里云为例 1. 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 2. 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 3. 修改 .ssh/config 配置文件
+Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem 三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
+非 root 用户免密登陆 为了安全，linux 上一般使用非 root 用户操作。
+以下包括创建非 root 用户、配置非 root 用户的免密登陆。
+创建非 root 用户 在服务器中：
+sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1.</description>
+    </item>
+    
+    <item>
+      <title>Hugo 自动化部署方案</title>
+      <link>/posts/first/</link>
+      <pubDate>Wed, 27 Nov 2019 18:04:12 +0800</pubDate>
+      
+      <guid>/posts/first/</guid>
+      <description>以前使用 Hexo 配合 Github 搭建个人博客，搭建和部署都挺方便。
+这套方案还有一个优点是，借助 GitHub Page，不需要另购服务器，几乎零成本。
+但是 Github 对百度爬虫不友好，文章难以被索引。恰逢阿里云搞活动，入手了一个服务器，所以起了自建博客的心思。
+对比了几个主流博客平台，最终选择了基于 Go 的 Hugo。
+一、博客的搭建 使用 Hugo 搭建博客非常简单，按照官网上的教程，几分钟就能完成。
+而选择哪个博客主题使用，可能才是头疼的问题。
+大道至简，本博客使用的是基于 ezhil 修改的主题。
+二、博客的组织 博客内容的模块化十分重要。虽然目前选择了 Hugo 平台 和 ezhil 主题，但不排除以后会更换。
+所以，关于博客的组织，需要考虑结构的分离，包括：
+ Hugo 项目主干 博客文章 主题  而这可以使用 Git 的 submodule 进行管理。对应的结构是：
+ Hugo 项目主干（主仓库 A）  博客文章（子仓库 B） 主题（子仓库 C）   以下是大致流程 ——
+项目主干 命令行创建出博客主干。
+hugo new site blog git init # 将仓库推送到自己的 Github 中 主题模块 选择好主题后，先 fork 到自己的 Github 仓库下，再使用 submodule 和项目主干建立父子关系。</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/posts/readme/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/posts/readme/</guid>
+      <description>blog-article 博客文章</description>
+    </item>
+    
+  </channel>
+</rss>

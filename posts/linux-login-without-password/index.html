@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Linux 免密码登陆 - 黑白进制</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Linux 免密码登陆" />
+<meta property="og:description" content="Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
+root 用户免密登陆 一般云平台都提供可视化配置工具。
+以阿里云为例 1. 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 2. 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 3. 修改 .ssh/config 配置文件
+Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem 三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
+非 root 用户免密登陆 为了安全，linux 上一般使用非 root 用户操作。
+以下包括创建非 root 用户、配置非 root 用户的免密登陆。
+创建非 root 用户 在服务器中：
+sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/linux-login-without-password/" />
+<meta property="article:published_time" content="2019-11-28T00:44:32+08:00" />
+<meta property="article:modified_time" content="2019-11-28T00:44:32+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Linux 免密码登陆"/>
+<meta name="twitter:description" content="Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
+root 用户免密登陆 一般云平台都提供可视化配置工具。
+以阿里云为例 1. 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 2. 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 3. 修改 .ssh/config 配置文件
+Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem 三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
+非 root 用户免密登陆 为了安全，linux 上一般使用非 root 用户操作。
+以下包括创建非 root 用户、配置非 root 用户的免密登陆。
+创建非 root 用户 在服务器中：
+sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	
+
+	
+	<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="">黑白进制</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li >
+				<a href="/">主页</a>
+			</li>
+			
+			<li >
+				<a href="/books">书单</a>
+			</li>
+			
+			<li >
+				<a href="/tags">标签</a>
+			</li>
+			
+			<li  class="active" >
+				<a href="/posts">订阅</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Linux 免密码登陆</h1>
+			<div class="meta">发布于 2019-11-28 <span class="draft-label">DRAFT</span> </div>
+		</div>
+
+		<div class="markdown">
+			
+
+<p>Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。</p>
+
+<h2 id="root-用户免密登陆">root 用户免密登陆</h2>
+
+<p>一般云平台都提供可视化配置工具。</p>
+
+<p>以阿里云为例
+ 1. 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS
+ 2. 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中
+ 3. 修改 .ssh/config 配置文件</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Host abc
+  HostName 11.111.111.111
+  Port 22
+  User root
+  IdentityFile ~/.ssh/xxx.pem</pre></div>
+<p>三步即可配置完成，使用 <code>ssh abc</code> 即可直接登陆服务器。</p>
+
+<h2 id="非-root-用户免密登陆">非 root 用户免密登陆</h2>
+
+<p>为了安全，linux 上一般使用非 root 用户操作。</p>
+
+<p>以下包括创建非 root 用户、配置非 root 用户的免密登陆。</p>
+
+<h3 id="创建非-root-用户">创建非 root 用户</h3>
+
+<p>在服务器中：</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo useradd -m myuser
+sudo passwd myuser</code></pre></div>
+<h3 id="配置免密登陆">配置免密登陆</h3>
+
+<p>1.本地生成密钥对：</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#586e75"># 生成密钥对</span>
+ssh-keygen -t rsa
+
+<span style="color:#586e75"># 上传私钥到服务器</span>
+scp ~/id_rsa.pub myuser@11.111.111.111:~/</code></pre></div>
+<p>2.修改本地 <code>~/.ssh/config</code> 文件：</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Host myuser
+  HostName 11.111.111.111
+  Port 22
+  User myuser
+  IdentityFile ~/.ssh/id_rsa</pre></div>
+<p>3.登陆到服务器上的非 root 用户进行操作：</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#586e75"># 创建 authorized_keys 文件</span>
+mkdir ~/.ssh
+touch ~/.ssh/authorized_keys
+
+<span style="color:#586e75"># 将之前上传的公钥写入 authorized_keys 中</span>
+cat ~/id_rsa.pub &gt;&gt; ~/.ssh/authorized_keys
+
+<span style="color:#586e75"># 设置权限</span>
+chmod <span style="color:#2aa198">700</span> ~/.ssh
+chmod <span style="color:#2aa198">644</span> ~/.ssh/authorized_keys</code></pre></div>
+<p>通过上述三步即可配置完成，通过 <code>ssh myuser</code> 即可免密登陆。</p>
+
+		</div>
+
+		<div class="post-tags">
+			
+				
+					<nav class="nav tags">
+							<ul class="flat">
+								
+								<li><a href="/tags/linux">Linux</a></li>
+								
+							</ul>
+					</nav>
+				
+			
+		</div></div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> Eriice © 2019</div>
+		
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>
