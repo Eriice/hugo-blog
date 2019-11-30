@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 黑白进制</title>
-    <link>/posts/</link>
+    <link>http://imgping.com/posts/</link>
     <description>Recent content in Posts on 黑白进制</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Eriice © 2019</copyright>
     <lastBuildDate>Thu, 28 Nov 2019 18:18:21 +0800</lastBuildDate>
     
-	<atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://imgping.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Github Action Submodules</title>
-      <link>/posts/github-action-submodules/</link>
+      <link>http://imgping.com/posts/github-action-submodules/</link>
       <pubDate>Thu, 28 Nov 2019 18:18:21 +0800</pubDate>
       
-      <guid>/posts/github-action-submodules/</guid>
+      <guid>http://imgping.com/posts/github-action-submodules/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Centos Install Jenkins</title>
-      <link>/posts/centos-install-jenkins/</link>
+      <link>http://imgping.com/posts/centos-install-jenkins/</link>
       <pubDate>Thu, 28 Nov 2019 01:52:25 +0800</pubDate>
       
-      <guid>/posts/centos-install-jenkins/</guid>
+      <guid>http://imgping.com/posts/centos-install-jenkins/</guid>
       <description>sudo yum install java-1.8.0-openjdk$ java -versionopenjdk version &amp;#34;1.8.0_232&amp;#34; OpenJDK Runtime Environment (build 1.8.0_232-b09) OpenJDK 64-Bit Server VM (build 25.232-b09, mixed mode)rpm -q centos-release centos-release-7-4.1708.el7.centos.x86_64 centos-release-7-7.1908.0.el7.centos.x86_64 https://medium.com/@nazishalam07/how-to-install-jenkins-on-centos-7-a9db268663f5
 https://blog.csdn.net/miss1181248983/article/details/82840006
 jenkins 配合 docker，需要注意将 jenkins 角色加入 docker 用户组</description>
@@ -34,10 +34,10 @@ jenkins 配合 docker，需要注意将 jenkins 角色加入 docker 用户组</d
     
     <item>
       <title>Linux 免密码登陆</title>
-      <link>/posts/linux-login-without-password/</link>
+      <link>http://imgping.com/posts/linux-login-without-password/</link>
       <pubDate>Thu, 28 Nov 2019 00:44:32 +0800</pubDate>
       
-      <guid>/posts/linux-login-without-password/</guid>
+      <guid>http://imgping.com/posts/linux-login-without-password/</guid>
       <description>Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
 root 用户免密登陆 一般云平台都提供可视化配置工具。
 以阿里云为例 1. 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 2. 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 3. 修改 .ssh/config 配置文件
@@ -50,10 +50,10 @@ sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1.</description>
     
     <item>
       <title>Hugo 自动化部署方案</title>
-      <link>/posts/first/</link>
+      <link>http://imgping.com/posts/first/</link>
       <pubDate>Wed, 27 Nov 2019 18:04:12 +0800</pubDate>
       
-      <guid>/posts/first/</guid>
+      <guid>http://imgping.com/posts/first/</guid>
       <description>以前使用 Hexo 配合 Github 搭建个人博客，搭建和部署都挺方便。
 这套方案还有一个优点是，借助 GitHub Page，不需要另购服务器，几乎零成本。
 但是 Github 对百度爬虫不友好，文章难以被索引。恰逢阿里云搞活动，入手了一个服务器，所以起了自建博客的心思。
@@ -71,10 +71,10 @@ hugo new site blog git init # 将仓库推送到自己的 Github 中 主题模�
     
     <item>
       <title></title>
-      <link>/posts/readme/</link>
+      <link>http://imgping.com/posts/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>/posts/readme/</guid>
+      <guid>http://imgping.com/posts/readme/</guid>
       <description>blog-article 博客文章</description>
     </item>
     
