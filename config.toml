@@ -1,4 +1,4 @@
-baseURL = "http://imgping.com"
+baseURL = "https://imgping.com/"
 languageCode = "en-us"
 title = "黑白进制"
 theme = "ezhil"
