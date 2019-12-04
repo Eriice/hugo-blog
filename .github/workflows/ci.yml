@@ -19,11 +19,10 @@ jobs:
     - name: Hugo blog CI
       run: |
         hugo -D
-        find ./public -name ".git" -type d -delete
       
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v2.5.0
       env:
         PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-        PUBLISH_BRANCH: test-branch
+        PUBLISH_BRANCH: another-branch
         PUBLISH_DIR: ./public
