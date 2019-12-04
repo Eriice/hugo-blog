@@ -6,4 +6,4 @@
 	url = https://github.com/Eriice/blog-article.git
 [submodule "static"]
 	path = static
-	url = git@github.com:Eriice/blog-assets.git
+	url = https://github.com:Eriice/blog-assets.git
