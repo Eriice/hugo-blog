@@ -3,52 +3,77 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://imgping.com/posts/github-action-submodules/</loc>
+    <loc>https://imgping.com/posts/git-submodule/</loc>
+    <lastmod>2019-12-05T01:47:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://imgping.com/posts/</loc>
+    <lastmod>2019-12-05T01:47:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://imgping.com/</loc>
+    <lastmod>2019-12-05T01:47:55+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://imgping.com/tags/</loc>
+    <lastmod>2019-12-03T01:11:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://imgping.com/posts/number-life/</loc>
+    <lastmod>2019-12-03T01:11:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://imgping.com/tags/%E6%97%A5%E5%B8%B8/</loc>
+    <lastmod>2019-12-03T01:11:49+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://imgping.com/posts/github-action-submodules/</loc>
     <lastmod>2019-11-28T18:18:21+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://imgping.com/posts/</loc>
-    <lastmod>2019-11-28T18:18:21+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://imgping.com/</loc>
-    <lastmod>2019-11-28T18:18:21+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://imgping.com/posts/centos-install-jenkins/</loc>
+    <loc>https://imgping.com/posts/centos-install-jenkins/</loc>
     <lastmod>2019-11-28T01:52:25+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://imgping.com/tags/linux/</loc>
+    <loc>https://imgping.com/tags/jenkins/</loc>
+    <lastmod>2019-11-28T01:52:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://imgping.com/tags/%E8%87%AA%E5%8A%A8%E5%8C%96%E9%83%A8%E7%BD%B2/</loc>
+    <lastmod>2019-11-28T01:52:25+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://imgping.com/tags/linux/</loc>
     <lastmod>2019-11-28T00:44:32+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://imgping.com/posts/linux-login-without-password/</loc>
+    <loc>https://imgping.com/posts/linux-login-without-password/</loc>
     <lastmod>2019-11-28T00:44:32+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://imgping.com/tags/</loc>
-    <lastmod>2019-11-28T00:44:32+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://imgping.com/posts/first/</loc>
+    <loc>https://imgping.com/tags/hugo/</loc>
     <lastmod>2019-11-27T18:04:12+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://imgping.com/tags/%E6%97%A5%E5%B8%B8/</loc>
+    <loc>https://imgping.com/posts/first/</loc>
     <lastmod>2019-11-27T18:04:12+08:00</lastmod>
   </url>
   
   <url>
-    <loc>http://imgping.com/posts/readme/</loc>
+    <loc>https://imgping.com/posts/readme/</loc>
     <priority>0</priority>
   </url>
   

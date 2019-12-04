@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Git Submodule - 黑白进制</title><link rel="icon" type="image/png" href=icons/myicon.png /><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="Git Submodule" />
+<meta property="og:description" content=" 使用 Git Submodule 注意事项。
+注意事项 同名文件夹 出现以下报错信息，说明本地已经存在同名文件夹，不能从 git 中拉取内容进行子模块的创建。
+需要将本地文件夹删除后（注意备份数据），重新运行命令即可。
+$ git submodule add git@github.com:xxx/xxx.git folder # &#39;folder&#39; already exists and is not a valid git repo 远程仓库为空 如果远程仓库是新创建且为空的，直接创建子模块也会提示错误。
+建议远程仓库创建时，同时新建 README.md
+$ git submodule add git@github.com:xxx/xxx.git folder Cloning into &#39;/xxx/folder&#39;... warning: You appear to have cloned an empty repository. fatal: You are on a branch yet to be born Unable to checkout submodule &#39;folder&#39;" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://imgping.com/posts/git-submodule/" />
+<meta property="article:published_time" content="2019-12-05T01:47:55+08:00" />
+<meta property="article:modified_time" content="2019-12-05T01:47:55+08:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Git Submodule"/>
+<meta name="twitter:description" content=" 使用 Git Submodule 注意事项。
+注意事项 同名文件夹 出现以下报错信息，说明本地已经存在同名文件夹，不能从 git 中拉取内容进行子模块的创建。
+需要将本地文件夹删除后（注意备份数据），重新运行命令即可。
+$ git submodule add git@github.com:xxx/xxx.git folder # &#39;folder&#39; already exists and is not a valid git repo 远程仓库为空 如果远程仓库是新创建且为空的，直接创建子模块也会提示错误。
+建议远程仓库创建时，同时新建 README.md
+$ git submodule add git@github.com:xxx/xxx.git folder Cloning into &#39;/xxx/folder&#39;... warning: You appear to have cloned an empty repository. fatal: You are on a branch yet to be born Unable to checkout submodule &#39;folder&#39;"/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="https://imgping.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://imgping.com/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://imgping.com/css/custom.css" />
+	
+
+	
+	<script src="https://imgping.com/js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title"><a href="https://imgping.com/">黑白进制</a></h1>
+	<div class="site-description"><nav class="nav social">
+			<ul class="flat"></ul>
+		</nav>
+	</div>
+
+	
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li >
+				<a href="/">主页</a>
+			</li>
+			
+			<li >
+				<a href="/books">书单</a>
+			</li>
+			
+			<li >
+				<a href="/tags">标签</a>
+			</li>
+			
+			<li  class="active" >
+				<a href="/posts">订阅</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">Git Submodule</h1>
+			<div class="meta">发布于 2019-12-05 <span class="draft-label">DRAFT</span> </div>
+		</div>
+
+		<div class="markdown">
+			
+
+<p>使用 Git Submodule 注意事项。</p>
+
+<h2 id="注意事项">注意事项</h2>
+
+<h3 id="同名文件夹">同名文件夹</h3>
+
+<p>出现以下报错信息，说明本地已经存在同名文件夹，不能从 git 中拉取内容进行子模块的创建。</p>
+
+<p>需要将本地文件夹删除后（注意备份数据），重新运行命令即可。</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git submodule add git@github.com:xxx/xxx.git folder
+<span style="color:#586e75"># &#39;folder&#39; already exists and is not a valid git repo</span></code></pre></div>
+<h3 id="远程仓库为空">远程仓库为空</h3>
+
+<p>如果远程仓库是新创建且为空的，直接创建子模块也会提示错误。</p>
+
+<p>建议远程仓库创建时，同时新建 README.md</p>
+<div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ git submodule add git@github.com:xxx/xxx.git folder
+
+Cloning into <span style="color:#2aa198">&#39;/xxx/folder&#39;</span>...
+warning: You appear to have cloned an empty repository.
+fatal: You are on a branch yet to be born
+Unable to checkout submodule <span style="color:#2aa198">&#39;folder&#39;</span></code></pre></div>
+		</div>
+
+		<div class="post-tags">
+			
+				
+			
+		</div></div>
+	<div class="footer wrapper">
+	<nav class="nav">
+		<div> Eriice © 2019</div>
+		
+	</nav>
+</div>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-123-45', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</body>
+</html>

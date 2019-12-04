@@ -6,41 +6,43 @@
 	<meta property="og:title" content="Linux 免密码登陆" />
 <meta property="og:description" content="Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
 root 用户免密登陆 一般云平台都提供可视化配置工具。
-以阿里云为例 1. 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 2. 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 3. 修改 .ssh/config 配置文件
-Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem 三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
+以阿里云为例
+ 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 修改 .ssh/config 配置文件
+Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem  三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
 非 root 用户免密登陆 为了安全，linux 上一般使用非 root 用户操作。
-以下包括创建非 root 用户、配置非 root 用户的免密登陆。
+以下展示创建非 root 用户、配置非 root 用户的免密登陆。
 创建非 root 用户 在服务器中：
 sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1." />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://imgping.com/posts/linux-login-without-password/" />
+<meta property="og:url" content="https://imgping.com/posts/linux-login-without-password/" />
 <meta property="article:published_time" content="2019-11-28T00:44:32+08:00" />
 <meta property="article:modified_time" content="2019-11-28T00:44:32+08:00" />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Linux 免密码登陆"/>
 <meta name="twitter:description" content="Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
 root 用户免密登陆 一般云平台都提供可视化配置工具。
-以阿里云为例 1. 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 2. 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 3. 修改 .ssh/config 配置文件
-Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem 三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
+以阿里云为例
+ 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 修改 .ssh/config 配置文件
+Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem  三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
 非 root 用户免密登陆 为了安全，linux 上一般使用非 root 用户操作。
-以下包括创建非 root 用户、配置非 root 用户的免密登陆。
+以下展示创建非 root 用户、配置非 root 用户的免密登陆。
 创建非 root 用户 在服务器中：
 sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
 
-	<link rel="stylesheet" type="text/css" media="screen" href="http://imgping.comcss/normalize.css" />
-	<link rel="stylesheet" type="text/css" media="screen" href="http://imgping.comcss/main.css" />
-	<link rel="stylesheet" type="text/css" href="http://imgping.comcss/custom.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://imgping.com/css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="https://imgping.com/css/main.css" />
+	<link rel="stylesheet" type="text/css" href="https://imgping.com/css/custom.css" />
 	
 
 	
-	<script src="http://imgping.comjs/main.js"></script>
+	<script src="https://imgping.com/js/main.js"></script>
 </head>
 
 <body>
 	<div class="container wrapper post">
 		<div class="header">
-	<h1 class="site-title"><a href="http://imgping.com">黑白进制</a></h1>
+	<h1 class="site-title"><a href="https://imgping.com/">黑白进制</a></h1>
 	<div class="site-description"><nav class="nav social">
 			<ul class="flat"></ul>
 		</nav>
@@ -85,22 +87,27 @@ sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1."/>
 
 <p>一般云平台都提供可视化配置工具。</p>
 
-<p>以阿里云为例
- 1. 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS
- 2. 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中
- 3. 修改 .ssh/config 配置文件</p>
+<p>以阿里云为例</p>
+
+<ol>
+<li>在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS</li>
+<li>将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中</li>
+
+<li><p>修改 .ssh/config 配置文件</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">Host abc
-  HostName 11.111.111.111
-  Port 22
-  User root
-  IdentityFile ~/.ssh/xxx.pem</pre></div>
+HostName 11.111.111.111
+Port 22
+User root
+IdentityFile ~/.ssh/xxx.pem</pre></div></li>
+</ol>
+
 <p>三步即可配置完成，使用 <code>ssh abc</code> 即可直接登陆服务器。</p>
 
 <h2 id="非-root-用户免密登陆">非 root 用户免密登陆</h2>
 
 <p>为了安全，linux 上一般使用非 root 用户操作。</p>
 
-<p>以下包括创建非 root 用户、配置非 root 用户的免密登陆。</p>
+<p>以下展示创建非 root 用户、配置非 root 用户的免密登陆。</p>
 
 <h3 id="创建非-root-用户">创建非 root 用户</h3>
 

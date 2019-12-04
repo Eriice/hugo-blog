@@ -3,15 +3,33 @@ body {
   "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "MicrosoftYaHei", "WenQuanYi Micro Hei", sans-serif;
 
   background: linear-gradient(to left, violet,indigo,blue,green,yellow,orange,red ) repeat-x left;
-	background-size: 100% 0.4rem;
+	background-size: 100% 0.3rem;
   background-position: 0 0;
 
-  color: #616161;
+  color: #555;
 }
 
 h1,h2,h3,h4,h5,h6 {
   font-family: "Source Code Pro",
   "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "MicrosoftYaHei", "WenQuanYi Micro Hei", sans-serif;
+  font-weight: 400;
+}
+
+p > code {
+  font-size: 0.8em;
+  color: #e83e8c;
+}
+
+p > a {
+  padding-left: 1rem;
+  background: url(../img/link.svg) no-repeat;
+  background-size: 0.8rem 0.8rem;
+  background-position: 0.1rem;
+}
+
+p > img {
+  box-shadow: 0 0 6px #666;
+  border-radius: 4px;
 }
 
 .container {
@@ -45,7 +63,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .site-title a {
-  color: #616161;
+  color: #666;
   font-weight: 500;
 }
 
@@ -56,18 +74,29 @@ h1,h2,h3,h4,h5,h6 {
     color: #ccc;
 }
 
-.footer {
-  padding: 10px 0;
-  text-align: left;
-}
-
 .posts .post .title {
   font-size: 1.2rem;
   color: #069;
 }
 
-.post .title {
-  color: #616161;
-  font-size: 1.1rem;
-  font-weight: 700;
+.post .post-header .title {
+  color: #666;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+/* post 页 发布时间取消留空 */
+.post .post-header .meta {
+  padding-left: 0;
+}
+
+/* 首页标题行距 */
+.recent-posts .posts .post {
+  margin-bottom: 1.6rem;
+}
+
+/* 页脚 */
+.footer {
+  padding: 10px 0;
+  text-align: left;
 }

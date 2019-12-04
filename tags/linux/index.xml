@@ -2,28 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on 黑白进制</title>
-    <link>http://imgping.com/tags/linux/</link>
+    <link>https://imgping.com/tags/linux/</link>
     <description>Recent content in Linux on 黑白进制</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Eriice © 2019</copyright>
     <lastBuildDate>Thu, 28 Nov 2019 00:44:32 +0800</lastBuildDate>
     
-	<atom:link href="http://imgping.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://imgping.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux 免密码登陆</title>
-      <link>http://imgping.com/posts/linux-login-without-password/</link>
+      <link>https://imgping.com/posts/linux-login-without-password/</link>
       <pubDate>Thu, 28 Nov 2019 00:44:32 +0800</pubDate>
       
-      <guid>http://imgping.com/posts/linux-login-without-password/</guid>
+      <guid>https://imgping.com/posts/linux-login-without-password/</guid>
       <description>Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
 root 用户免密登陆 一般云平台都提供可视化配置工具。
-以阿里云为例 1. 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 2. 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 3. 修改 .ssh/config 配置文件
-Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem 三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
+以阿里云为例
+ 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 修改 .ssh/config 配置文件
+Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem  三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
 非 root 用户免密登陆 为了安全，linux 上一般使用非 root 用户操作。
-以下包括创建非 root 用户、配置非 root 用户的免密登陆。
+以下展示创建非 root 用户、配置非 root 用户的免密登陆。
 创建非 root 用户 在服务器中：
 sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1.</description>
     </item>
