@@ -4,3 +4,6 @@
 [submodule "content/posts"]
 	path = content/posts
 	url = https://github.com/Eriice/blog-article.git
+[submodule "static/img"]
+	path = static/img
+	url = https://github.com/Eriice/blog-assets.git
