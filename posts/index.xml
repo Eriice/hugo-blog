@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on 黑白进制</title>
-    <link>https://imgping.com/posts/</link>
+    <link>http://blog.eriice.com/posts/</link>
     <description>Recent content in Posts on 黑白进制</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Eriice © 2019</copyright>
     <lastBuildDate>Thu, 05 Dec 2019 01:47:55 +0800</lastBuildDate>
     
-	<atom:link href="https://imgping.com/posts/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.eriice.com/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Git Submodule</title>
-      <link>https://imgping.com/posts/git-submodule/</link>
+      <link>http://blog.eriice.com/posts/git-submodule/</link>
       <pubDate>Thu, 05 Dec 2019 01:47:55 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/git-submodule/</guid>
+      <guid>http://blog.eriice.com/posts/git-submodule/</guid>
       <description> 使用 Git Submodule 注意事项。
 注意事项 同名文件夹 出现以下报错信息，说明本地已经存在同名文件夹，不能从 git 中拉取内容进行子模块的创建。
 需要将本地文件夹删除后（注意备份数据），重新运行命令即可。
@@ -28,10 +28,10 @@ $ git submodule add git@github.com:xxx/xxx.git folder Cloning into &amp;#39;/xxx
     
     <item>
       <title>数字人生</title>
-      <link>https://imgping.com/posts/number-life/</link>
+      <link>http://blog.eriice.com/posts/number-life/</link>
       <pubDate>Tue, 03 Dec 2019 01:11:49 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/number-life/</guid>
+      <guid>http://blog.eriice.com/posts/number-life/</guid>
       <description>毕业 985，入职 500 强，上班 996，离职 251，维权 404
  李洪元遭遇有感
  </description>
@@ -39,19 +39,19 @@ $ git submodule add git@github.com:xxx/xxx.git folder Cloning into &amp;#39;/xxx
     
     <item>
       <title>Github Action Submodules</title>
-      <link>https://imgping.com/posts/github-action-submodules/</link>
+      <link>http://blog.eriice.com/posts/github-action-submodules/</link>
       <pubDate>Thu, 28 Nov 2019 18:18:21 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/github-action-submodules/</guid>
+      <guid>http://blog.eriice.com/posts/github-action-submodules/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Centos 安装 Jenkins</title>
-      <link>https://imgping.com/posts/centos-install-jenkins/</link>
+      <link>http://blog.eriice.com/posts/centos-install-jenkins/</link>
       <pubDate>Thu, 28 Nov 2019 01:52:25 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/centos-install-jenkins/</guid>
+      <guid>http://blog.eriice.com/posts/centos-install-jenkins/</guid>
       <description>Debian / Ubuntu 安装 Jenkins 较简单，按照 官网教程 操作即可。
 而 Jenkins 在 Centos 下的安装在官网没有体现，以下记录 Centos 7.4 安装 Jenkins 的步骤。
 一、在 Centos 中安装 Jenkins 准备 Java 环境 Jenkins 是基于 Java 运行的，但是 Centos 默认不含 Java 环境，所以首先需要安装 OpenJDK。
@@ -62,10 +62,10 @@ $ java -version openjdk version &amp;#34;1.8.0_232&amp;#34; OpenJDK Runtime Envi
     
     <item>
       <title>Linux 免密码登陆</title>
-      <link>https://imgping.com/posts/linux-login-without-password/</link>
+      <link>http://blog.eriice.com/posts/linux-login-without-password/</link>
       <pubDate>Thu, 28 Nov 2019 00:44:32 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/linux-login-without-password/</guid>
+      <guid>http://blog.eriice.com/posts/linux-login-without-password/</guid>
       <description>Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
 root 用户免密登陆 一般云平台都提供可视化配置工具。
 以阿里云为例
@@ -79,10 +79,10 @@ sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1.</description>
     
     <item>
       <title>Hugo 博客搭建及自动化部署思考</title>
-      <link>https://imgping.com/posts/first/</link>
+      <link>http://blog.eriice.com/posts/first/</link>
       <pubDate>Wed, 27 Nov 2019 18:04:12 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/first/</guid>
+      <guid>http://blog.eriice.com/posts/first/</guid>
       <description>以前使用 Hexo 配合 Github 搭建个人博客，搭建和部署都挺方便。
 这套方案还有一个优点是，借助 GitHub Page，不需要另购服务器，几乎零成本。
 但是 Github 对百度爬虫不友好，文章难以被索引。恰逢阿里云搞活动，入手了一个服务器，所以起了自建博客的心思。
@@ -100,10 +100,10 @@ hugo new site blog git init # 将仓库推送到自己的 Github 中 主题仓�
     
     <item>
       <title></title>
-      <link>https://imgping.com/posts/readme/</link>
+      <link>http://blog.eriice.com/posts/readme/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://imgping.com/posts/readme/</guid>
+      <guid>http://blog.eriice.com/posts/readme/</guid>
       <description>blog-article 博客文章</description>
     </item>
     

@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>日常 on 黑白进制</title>
-    <link>https://imgping.com/tags/%E6%97%A5%E5%B8%B8/</link>
+    <link>http://blog.eriice.com/tags/%E6%97%A5%E5%B8%B8/</link>
     <description>Recent content in 日常 on 黑白进制</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Eriice © 2019</copyright>
     <lastBuildDate>Tue, 03 Dec 2019 01:11:49 +0800</lastBuildDate>
     
-	<atom:link href="https://imgping.com/tags/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.eriice.com/tags/%E6%97%A5%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>数字人生</title>
-      <link>https://imgping.com/posts/number-life/</link>
+      <link>http://blog.eriice.com/posts/number-life/</link>
       <pubDate>Tue, 03 Dec 2019 01:11:49 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/number-life/</guid>
+      <guid>http://blog.eriice.com/posts/number-life/</guid>
       <description>毕业 985，入职 500 强，上班 996，离职 251，维权 404
  李洪元遭遇有感
  </description>

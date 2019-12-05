@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Linux on 黑白进制</title>
-    <link>https://imgping.com/tags/linux/</link>
+    <link>http://blog.eriice.com/tags/linux/</link>
     <description>Recent content in Linux on 黑白进制</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Eriice © 2019</copyright>
     <lastBuildDate>Thu, 28 Nov 2019 00:44:32 +0800</lastBuildDate>
     
-	<atom:link href="https://imgping.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.eriice.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Linux 免密码登陆</title>
-      <link>https://imgping.com/posts/linux-login-without-password/</link>
+      <link>http://blog.eriice.com/posts/linux-login-without-password/</link>
       <pubDate>Thu, 28 Nov 2019 00:44:32 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/linux-login-without-password/</guid>
+      <guid>http://blog.eriice.com/posts/linux-login-without-password/</guid>
       <description>Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
 root 用户免密登陆 一般云平台都提供可视化配置工具。
 以阿里云为例

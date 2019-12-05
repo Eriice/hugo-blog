@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugo on 黑白进制</title>
-    <link>https://imgping.com/tags/hugo/</link>
+    <link>http://blog.eriice.com/tags/hugo/</link>
     <description>Recent content in Hugo on 黑白进制</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Eriice © 2019</copyright>
     <lastBuildDate>Wed, 27 Nov 2019 18:04:12 +0800</lastBuildDate>
     
-	<atom:link href="https://imgping.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.eriice.com/tags/hugo/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hugo 博客搭建及自动化部署思考</title>
-      <link>https://imgping.com/posts/first/</link>
+      <link>http://blog.eriice.com/posts/first/</link>
       <pubDate>Wed, 27 Nov 2019 18:04:12 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/first/</guid>
+      <guid>http://blog.eriice.com/posts/first/</guid>
       <description>以前使用 Hexo 配合 Github 搭建个人博客，搭建和部署都挺方便。
 这套方案还有一个优点是，借助 GitHub Page，不需要另购服务器，几乎零成本。
 但是 Github 对百度爬虫不友好，文章难以被索引。恰逢阿里云搞活动，入手了一个服务器，所以起了自建博客的心思。

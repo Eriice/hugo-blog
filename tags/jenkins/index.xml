@@ -2,22 +2,22 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jenkins on 黑白进制</title>
-    <link>https://imgping.com/tags/jenkins/</link>
+    <link>http://blog.eriice.com/tags/jenkins/</link>
     <description>Recent content in Jenkins on 黑白进制</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Eriice © 2019</copyright>
     <lastBuildDate>Thu, 28 Nov 2019 01:52:25 +0800</lastBuildDate>
     
-	<atom:link href="https://imgping.com/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://blog.eriice.com/tags/jenkins/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Centos 安装 Jenkins</title>
-      <link>https://imgping.com/posts/centos-install-jenkins/</link>
+      <link>http://blog.eriice.com/posts/centos-install-jenkins/</link>
       <pubDate>Thu, 28 Nov 2019 01:52:25 +0800</pubDate>
       
-      <guid>https://imgping.com/posts/centos-install-jenkins/</guid>
+      <guid>http://blog.eriice.com/posts/centos-install-jenkins/</guid>
       <description>Debian / Ubuntu 安装 Jenkins 较简单，按照 官网教程 操作即可。
 而 Jenkins 在 Centos 下的安装在官网没有体现，以下记录 Centos 7.4 安装 Jenkins 的步骤。
 一、在 Centos 中安装 Jenkins 准备 Java 环境 Jenkins 是基于 Java 运行的，但是 Centos 默认不含 Java 环境，所以首先需要安装 OpenJDK。
