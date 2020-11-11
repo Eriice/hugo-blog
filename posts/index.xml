@@ -18,12 +18,12 @@
       <pubDate>Thu, 05 Dec 2019 01:47:55 +0800</pubDate>
       
       <guid>http://blog.eriice.com/posts/git-submodule/</guid>
-      <description> 使用 Git Submodule 注意事项。
+      <description>使用 Git Submodule 注意事项。
 注意事项 同名文件夹 出现以下报错信息，说明本地已经存在同名文件夹，不能从 git 中拉取内容进行子模块的创建。
 需要将本地文件夹删除后（注意备份数据），重新运行命令即可。
 $ git submodule add git@github.com:xxx/xxx.git folder # &amp;#39;folder&amp;#39; already exists and is not a valid git repo 远程仓库为空 如果远程仓库是新创建且为空的，直接创建子模块也会提示错误。
 建议远程仓库创建时，同时新建 README.md
-$ git submodule add git@github.com:xxx/xxx.git folder Cloning into &amp;#39;/xxx/folder&amp;#39;... warning: You appear to have cloned an empty repository. fatal: You are on a branch yet to be born Unable to checkout submodule &amp;#39;folder&amp;#39;</description>
+$ git submodule add git@github.com:xxx/xxx.git folder Cloning into &amp;#39;/xxx/folder&amp;#39;... warning: You appear to have cloned an empty repository. fatal: You are on a branch yet to be born Unable to checkout submodule &amp;#39;folder&amp;#39; </description>
     </item>
     
     <item>
@@ -69,12 +69,11 @@ $ java -version openjdk version &amp;#34;1.8.0_232&amp;#34; OpenJDK Runtime Envi
       <description>Linux 免密登陆包括 root 用户和非 root 用户的免密登陆。
 root 用户免密登陆 一般云平台都提供可视化配置工具。
 以阿里云为例
- 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 修改 .ssh/config 配置文件
-Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem  三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
+ 在【ECS 实例 - 网络与安全 - 密钥对】中，创建密钥对后，将公钥 xxx.pub 绑定到 ECS 中，重启 ECS 将私钥 xxx.pem 下载到本地，保存在 .ssh 文件夹中 修改 .ssh/config 配置文件  Host abc HostName 11.111.111.111 Port 22 User root IdentityFile ~/.ssh/xxx.pem 三步即可配置完成，使用 ssh abc 即可直接登陆服务器。
 非 root 用户免密登陆 为了安全，linux 上一般使用非 root 用户操作。
 以下展示创建非 root 用户、配置非 root 用户的免密登陆。
 创建非 root 用户 在服务器中：
-sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1.</description>
+sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1.本地生成密钥对：</description>
     </item>
     
     <item>
@@ -87,14 +86,14 @@ sudo useradd -m myuser sudo passwd myuser 配置免密登陆 1.</description>
 这套方案还有一个优点是，借助 GitHub Page，不需要另购服务器，几乎零成本。
 但是 Github 对百度爬虫不友好，文章难以被索引。恰逢阿里云搞活动，入手了一个服务器，所以起了自建博客的心思。
 对比了几个主流博客平台，最终选择了基于 Go 的 Hugo。
-这是测试语句
+再次测试。
 一、博客的搭建 使用 Hugo 搭建博客非常简单，按照官网上的教程，几分钟就能完成。
 而选择使用哪一个博客主题，可能才是头疼的问题。
 大道至简，本博客使用的是基于 ezhil 修改的主题。
 二、博客的组织 博客内容的模块化十分重要。虽然目前选择了 Hugo 平台 和 ezhil 主题，但不排除以后会更换。
 所以，关于博客的组织，需要考虑结构的分离，包括：
  Hugo 项目主干 博客文章 主题  而这可以使用 Git 的 submodule 进行管理。对应的结构是：
- Hugo 项目主干（主仓库 A）  博客文章（子仓库 B） 主题（子仓库 C）   以下是大致搭建流程 ——
+ Hugo 项目主干（主仓库 A）  博客文章（子仓库 B） 主题（子仓库 C）    以下是大致搭建流程 ——
 项目主干 命令行创建出博客主干。
 hugo new site blog git init # 将仓库推送到自己的 Github 中 主题仓库 选择好主题后，先 fork 到自己的 Github 仓库下，再使用 git submodule 和项目主干建立父子关系。</description>
     </item>

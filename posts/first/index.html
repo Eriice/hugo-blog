@@ -8,14 +8,14 @@
 这套方案还有一个优点是，借助 GitHub Page，不需要另购服务器，几乎零成本。
 但是 Github 对百度爬虫不友好，文章难以被索引。恰逢阿里云搞活动，入手了一个服务器，所以起了自建博客的心思。
 对比了几个主流博客平台，最终选择了基于 Go 的 Hugo。
-这是测试语句
+再次测试。
 一、博客的搭建 使用 Hugo 搭建博客非常简单，按照官网上的教程，几分钟就能完成。
 而选择使用哪一个博客主题，可能才是头疼的问题。
 大道至简，本博客使用的是基于 ezhil 修改的主题。
 二、博客的组织 博客内容的模块化十分重要。虽然目前选择了 Hugo 平台 和 ezhil 主题，但不排除以后会更换。
 所以，关于博客的组织，需要考虑结构的分离，包括：
  Hugo 项目主干 博客文章 主题  而这可以使用 Git 的 submodule 进行管理。对应的结构是：
- Hugo 项目主干（主仓库 A）  博客文章（子仓库 B） 主题（子仓库 C）   以下是大致搭建流程 ——
+ Hugo 项目主干（主仓库 A）  博客文章（子仓库 B） 主题（子仓库 C）    以下是大致搭建流程 ——
 项目主干 命令行创建出博客主干。
 hugo new site blog git init # 将仓库推送到自己的 Github 中 主题仓库 选择好主题后，先 fork 到自己的 Github 仓库下，再使用 git submodule 和项目主干建立父子关系。" />
 <meta property="og:type" content="article" />
@@ -28,14 +28,14 @@ hugo new site blog git init # 将仓库推送到自己的 Github 中 主题仓�
 这套方案还有一个优点是，借助 GitHub Page，不需要另购服务器，几乎零成本。
 但是 Github 对百度爬虫不友好，文章难以被索引。恰逢阿里云搞活动，入手了一个服务器，所以起了自建博客的心思。
 对比了几个主流博客平台，最终选择了基于 Go 的 Hugo。
-这是测试语句
+再次测试。
 一、博客的搭建 使用 Hugo 搭建博客非常简单，按照官网上的教程，几分钟就能完成。
 而选择使用哪一个博客主题，可能才是头疼的问题。
 大道至简，本博客使用的是基于 ezhil 修改的主题。
 二、博客的组织 博客内容的模块化十分重要。虽然目前选择了 Hugo 平台 和 ezhil 主题，但不排除以后会更换。
 所以，关于博客的组织，需要考虑结构的分离，包括：
  Hugo 项目主干 博客文章 主题  而这可以使用 Git 的 submodule 进行管理。对应的结构是：
- Hugo 项目主干（主仓库 A）  博客文章（子仓库 B） 主题（子仓库 C）   以下是大致搭建流程 ——
+ Hugo 项目主干（主仓库 A）  博客文章（子仓库 B） 主题（子仓库 C）    以下是大致搭建流程 ——
 项目主干 命令行创建出博客主干。
 hugo new site blog git init # 将仓库推送到自己的 Github 中 主题仓库 选择好主题后，先 fork 到自己的 Github 仓库下，再使用 git submodule 和项目主干建立父子关系。"/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:200,300" rel="stylesheet">
@@ -89,95 +89,64 @@ hugo new site blog git init # 将仓库推送到自己的 Github 中 主题仓�
 		</div>
 
 		<div class="markdown">
-			
-
-<p>以前使用 Hexo 配合 Github 搭建个人博客，搭建和部署都挺方便。</p>
-
+			<p>以前使用 Hexo 配合 Github 搭建个人博客，搭建和部署都挺方便。</p>
 <p>这套方案还有一个优点是，借助 GitHub Page，不需要另购服务器，几乎零成本。</p>
-
 <p>但是 Github 对百度爬虫不友好，文章难以被索引。恰逢阿里云搞活动，入手了一个服务器，所以起了自建博客的心思。</p>
-
 <p>对比了几个主流博客平台，最终选择了基于 Go 的 Hugo。</p>
-
-<p>这是测试语句</p>
-
-<h2 id="一-博客的搭建">一、博客的搭建</h2>
-
+<p>再次测试。</p>
+<h2 id="一博客的搭建">一、博客的搭建</h2>
 <p>使用 Hugo 搭建博客非常简单，按照官网上的<a href="https://gohugo.io/getting-started/quick-start/">教程</a>，几分钟就能完成。</p>
-
 <p>而选择使用哪一个博客主题，可能才是头疼的问题。</p>
-
 <p>大道至简，本博客使用的是基于 ezhil 修改的主题。</p>
-
-<h2 id="二-博客的组织">二、博客的组织</h2>
-
+<h2 id="二博客的组织">二、博客的组织</h2>
 <p>博客内容的模块化十分重要。虽然目前选择了 Hugo 平台 和 ezhil 主题，但不排除以后会更换。</p>
-
 <p>所以，关于博客的组织，需要考虑结构的分离，包括：</p>
-
 <ul>
 <li>Hugo 项目主干</li>
 <li>博客文章</li>
 <li>主题</li>
 </ul>
-
 <p>而这可以使用 Git 的 submodule 进行管理。对应的结构是：</p>
-
 <ul>
 <li>Hugo 项目主干（主仓库 A）
-
 <ul>
 <li>博客文章（子仓库 B）</li>
 <li>主题（子仓库 C）</li>
-</ul></li>
 </ul>
-
+</li>
+</ul>
 <p>以下是大致搭建流程 ——</p>
-
 <h3 id="项目主干">项目主干</h3>
-
 <p>命令行创建出博客主干。</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">hugo new site blog
 git init
-<span style="color:#586e75"># 将仓库推送到自己的 Github 中</span></code></pre></div>
-<h3 id="主题仓库">主题仓库</h3>
-
+<span style="color:#586e75"># 将仓库推送到自己的 Github 中</span>
+</code></pre></div><h3 id="主题仓库">主题仓库</h3>
 <p>选择好主题后，先 fork 到自己的 Github 仓库下，再使用 <code>git submodule</code> 和项目主干建立父子关系。</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#586e75"># 使用 fork 后的 Git 链接</span>
-git submodule add https://github.com/xxx/xxx.git themes/xxx</code></pre></div>
-<p>修改主题内容后，按照正常 git 流程 pull/push，修改内容将被提交到主题仓库。</p>
-
+git submodule add https://github.com/xxx/xxx.git themes/xxx
+</code></pre></div><p>修改主题内容后，按照正常 git 流程 pull/push，修改内容将被提交到主题仓库。</p>
 <h3 id="文章仓库">文章仓库</h3>
-
 <p>在自己的 Github 仓库下创建空项目，作为文章存放仓库。获得 Git 链接后，同理使用 <code>git submodule</code> 和项目主干建立父子关系。</p>
 <div class="highlight"><pre style="color:#93a1a1;background-color:#002b36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#586e75"># 使用创建文章仓库后获得的 Git 链接</span>
-git submodule add https://github.com/xxx/xxx.git content/posts</code></pre></div>
-<p>使用 <code>hugo new posts/some-article.md</code> 创建的博文，按照正常 git 流程 pull/push，会被存放到文章仓库中。</p>
-
-<h2 id="三-自动化部署思考">三、自动化部署思考</h2>
-
+git submodule add https://github.com/xxx/xxx.git content/posts
+</code></pre></div><p>使用 <code>hugo new posts/some-article.md</code> 创建的博文，按照正常 git 流程 pull/push，会被存放到文章仓库中。</p>
+<h2 id="三自动化部署思考">三、自动化部署思考</h2>
 <p>相对于使用 Github Page 进行博客搭建，自建博客在部署上需要额外的精力。</p>
-
 <p>以一般部署方法为例：在本地使用 <code>hugo -D</code> 生成静态页面，将页面通过 ftp 上传到服务器。</p>
-
 <p>这个过程重复劳动，希望通过自动化部署解决几个问题：</p>
-
 <ul>
 <li>提交修改后自动部署，减轻负担</li>
 <li>更换服务器后不需要重新搭建环境</li>
 </ul>
-
 <p>调研了主流的几种方案：</p>
-
 <ul>
 <li>使用 Github Page - 国内 SEO 不友好</li>
 <li>Github 配合 Netlify - 依赖国外服务器，有被墙风险</li>
 <li>Trivas CI - 可以实现持续集成，部署需要依赖脚本</li>
 <li>rsync 命令配合脚本 - 部署依赖脚本</li>
 </ul>
-
 <p>最后选用的是 <code>Github + Github Action + Github Webhooks + Jenkins + Docker</code>。</p>
-
 <ul>
 <li>Github 作为仓库</li>
 <li>本地修改 push 后，自动调用 GitHub Action</li>
@@ -187,17 +156,11 @@ git submodule add https://github.com/xxx/xxx.git content/posts</code></pre></div
 <li>部署任务一：拉取分支的静态资源</li>
 <li>部署任务二：如果服务器中不存在所需的 nginx 服务，则使用 docker 启动 nginx 服务，静态资源作为 volumn 挂载到 nginx 容器上</li>
 </ul>
-
 <p>相对于主流方案，上述流程显得比较“重”。但也确实解决了 SEO 问题或者被墙的风险，而且做到了一次提交，自动部署的理想状态。</p>
-
 <p>更重要的是，这套自动化部署方案不单只应用于博客中，一般项目也可以使用，还可以嵌入代码测试，代码审核、AB 测试等流程。</p>
-
 <p>通过博客的自动化部署尝试，学会自动化部署的经验，并推广到一般项目中，才是我选用这套方案的主要原因。</p>
-
 <h2 id="参考文章">参考文章</h2>
-
 <p><a href="https://gohugo.io/getting-started/quick-start/">Hugo 官网</a></p>
-
 <p><a href="https://lobotuerto.com/blog/how-to-setup-automatic-hugo-website-generation-and-deployment-with-git/">Hugo + rsync 部署</a></p>
 
 		</div>
