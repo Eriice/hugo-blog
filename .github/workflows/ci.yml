@@ -29,7 +29,3 @@ jobs:
       with:
         github_token: ${{ secrets.ACCESS_TOKEN }}
         publish_dir: ./public
-      # env:
-      #   PERSONAL_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-      #   PUBLISH_BRANCH: pages
-      #   PUBLISH_DIR: ./public
