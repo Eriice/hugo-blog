@@ -23,7 +23,7 @@
 需要将本地文件夹删除后（注意备份数据），重新运行命令即可。
 $ git submodule add git@github.com:xxx/xxx.git folder # &amp;#39;folder&amp;#39; already exists and is not a valid git repo 远程仓库为空 如果远程仓库是新创建且为空的，直接创建子模块也会提示错误。
 建议远程仓库创建时，同时新建 README.md
-$ git submodule add git@github.com:xxx/xxx.git folder Cloning into &amp;#39;/xxx/folder&amp;#39;... warning: You appear to have cloned an empty repository. fatal: You are on a branch yet to be born Unable to checkout submodule &amp;#39;folder&amp;#39; </description>
+$ git submodule add git@github.com:xxx/xxx.git folder Cloning into &amp;#39;/xxx/folder&amp;#39;... warning: You appear to have cloned an empty repository. fatal: You are on a branch yet to be born Unable to checkout submodule &amp;#39;folder&amp;#39; 使用 Github Desktop 将总仓库克隆下来后，直接添加子模块</description>
     </item>
     
     <item>
